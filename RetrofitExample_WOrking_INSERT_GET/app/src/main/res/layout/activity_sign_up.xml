@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.simplifiedlearning.retrofitexample.SignUp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID"
+        android:id="@+id/id"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id"
+        android:hint="name"
+        android:id="@+id/name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="updated"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:id="@+id/updated_at"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="created at"
+        android:layout_below="@+id/updated_at"
+        android:id="@+id/created_at"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="SignUp"
+        android:layout_below="@+id/created_at"
+        android:layout_centerInParent="true"
+        android:id="@+id/singup"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNextLogin"
+            android:layout_below="@+id/singup"
+            android:layout_centerInParent="true"
+            android:hint="Login"/>
+
+    </RelativeLayout>
+</RelativeLayout>
